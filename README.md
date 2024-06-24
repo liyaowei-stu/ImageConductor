@@ -1,11 +1,11 @@
 # Image Conductor
-This repository is the official implementation of [Image Conductor](https://liyaowei-stu.github.io/project/ImageConductor/). It is a novel approach for precise and fine-grained control of camera transitions and object movements in interactive video synthesis.
+This repository is the official implementation of [Image Conductor](https://arxiv.org/pdf/2406.15339). It is a novel approach for precise and fine-grained control of camera transitions and object movements in interactive video synthesis.
 <details><summary>Click for the full abstract of Image Conductor</summary>
 
 > Filmmaking and animation production often require sophisticated techniques for coordinating camera transitions and object movements, typically involving labor-intensive real-world capturing. Despite advancements in generative AI for video creation, achieving precise control over motion for interactive video asset generation remains challenging. To this end, we propose Image Conductor, a method for precise control of camera transitions and object movements to generate video assets from a single image. An well-cultivated training strategy is proposed to separate distinct camera and object motion by camera LoRA weights and object LoRA weights. To further address cinematographic variations from ill-posed trajectories, we introduce a camera-free guidance technique during inference, enhancing object movements while eliminating camera transitions. Additionally, we develop a trajectory-oriented video motion data curation pipeline for training. 
 </details>
 
-**[Image Conductor: Precision Control for Interactive Video Synthesis](https://arxiv.org/abs/2406.05338)** 
+**[Image Conductor: Precision Control for Interactive Video Synthesis](https://arxiv.org/pdf/2406.15339)** 
 </br>
 [Yaowei Li](https://scholar.google.com/citations?user=XlhADHoAAAAJ&hl=zh-CN),
 [Xintao Wang](https://scholar.google.com.hk/citations?user=FQgZpQoAAAAJ&hl=en),
