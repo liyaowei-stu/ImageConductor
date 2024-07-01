@@ -27,7 +27,7 @@ This repository is the official implementation of [Image Conductor](https://arxi
 
 ## 📍 Todo
 - [ ] Release Gradio demo
-- [ ] Release the MotionClone code
+- [ ] Release the ImageConductor code
 - [x] Release paper
 
 ## 🎨 Gallery
