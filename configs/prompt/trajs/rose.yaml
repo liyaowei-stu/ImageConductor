@@ -1,0 +1,33 @@
+- inference_config: "configs/inference/inference.yaml"
+
+  unet_path: "models/unet.ckpt"
+  image_controlnet_path: "models/image_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet.ckpt"
+
+  image_controlnet_config: "configs/inference/image_condition.yaml"
+  flow_controlnet_config: "configs/inference/flow_condition.yaml"
+
+  H: 256
+  W: 384
+  seed: [42, -1, -1, -1]
+  steps: 25
+  guidance_scale: 7.5
+
+  controlnet_image_indexs: [0]
+  controlnet_images:
+    - "__asset__/images/rose-1.jpg"
+  controlnet_trajs: "__asset__/trajs/rose-1.json"
+  control_mode: "object"
+
+
+  prompt:
+    - "a red rose engulfed in flames."
+    - "a red rose engulfed in flames."
+    - "a red rose engulfed in flames."
+    - "a red rose engulfed in flames."
+  
+  n_prompt:
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
