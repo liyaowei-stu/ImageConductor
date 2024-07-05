@@ -1,0 +1,173 @@
+- inference_config: "configs/inference/inference.yaml"
+
+  unet_path: "models/unet.ckpt"
+  image_controlnet_path: "models/image_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet.ckpt"
+
+  image_controlnet_config: "configs/inference/image_condition.yaml"
+  flow_controlnet_config: "configs/inference/flow_condition.yaml"
+
+  H: 256
+  W: 384
+  seed: [42, -1, -1, -1]
+  steps: 25
+  guidance_scale: 7.5
+
+  controlnet_image_indexs: [0]
+  controlnet_images:
+    - "__asset__/images/object/rose-1.jpg"
+  controlnet_trajs: "__asset__/trajs/object/rose-1.json"
+  control_mode: "object"
+
+
+  prompt:
+    - "a red rose engulfed in flames."
+    - "a red rose engulfed in flames."
+    - "a red rose engulfed in flames."
+    - "a red rose engulfed in flames."
+  
+  n_prompt:
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+
+
+- inference_config: "configs/inference/inference.yaml"
+
+  unet_path: "models/unet.ckpt"
+  image_controlnet_path: "models/image_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet.ckpt"
+
+  image_controlnet_config: "configs/inference/image_condition.yaml"
+  flow_controlnet_config: "configs/inference/flow_condition.yaml"
+
+  H: 256
+  W: 384
+  seed: [42, -1, -1, -1]
+  steps: 25
+  guidance_scale: 7.5
+
+  controlnet_image_indexs: [0]
+  controlnet_images:
+    - "__asset__/images/object/kiss-1.jpg"
+  controlnet_trajs: "__asset__/trajs/object/kiss-1.json"
+  control_mode: "object"
+
+
+  prompt:
+    - "A couple embraces and kiss in the rain."
+    - "A couple embraces and kiss in the rain."
+    - "A couple embraces and kiss in the rain."
+    - "A couple embraces and kiss in the rain."
+  
+  n_prompt:
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+
+
+- inference_config: "configs/inference/inference.yaml"
+
+  unet_path: "models/unet.ckpt"
+  image_controlnet_path: "models/image_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet.ckpt"
+
+  image_controlnet_config: "configs/inference/image_condition.yaml"
+  flow_controlnet_config: "configs/inference/flow_condition.yaml"
+
+  H: 256
+  W: 384
+  seed: [42, -1, -1, -1]
+  steps: 25
+  guidance_scale: 7.5
+
+  controlnet_image_indexs: [0]
+  controlnet_images:
+    - "__asset__/images/object/bee-1.jpg"
+  controlnet_trajs: "__asset__/trajs/object/bee-1.json"
+  control_mode: "object"
+
+
+  prompt:
+    - "A honeybee flies to the pistil of sunflower."
+    - "A honeybee flies to the pistil of sunflower."
+    - "A honeybee flies to the pistil of sunflower."
+    - "A honeybee flies to the pistil of sunflower."
+  
+  n_prompt:
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+
+
+- inference_config: "configs/inference/inference.yaml"
+
+  unet_path: "models/unet.ckpt"
+  image_controlnet_path: "models/image_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet.ckpt"
+
+  image_controlnet_config: "configs/inference/image_condition.yaml"
+  flow_controlnet_config: "configs/inference/flow_condition.yaml"
+
+  H: 256
+  W: 384
+  seed: [42, -1, -1, -1]
+  steps: 25
+  guidance_scale: 7.5
+
+  controlnet_image_indexs: [0]
+  controlnet_images:
+    - "__asset__/images/object/red-car-1.jpg"
+  controlnet_trajs: "__asset__/trajs/object/red-car-1.json"
+  control_mode: "object"
+
+
+  prompt:
+    - "Two red sports cars facing each other on a road."
+    - "Two red sports cars facing each other on a road."
+    - "Two red sports cars facing each other on a road."
+    - "Two red sports cars facing each other on a road."
+  
+  n_prompt:
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+
+
+- inference_config: "configs/inference/inference.yaml"
+
+  unet_path: "models/unet.ckpt"
+  image_controlnet_path: "models/image_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet.ckpt"
+
+  image_controlnet_config: "configs/inference/image_condition.yaml"
+  flow_controlnet_config: "configs/inference/flow_condition.yaml"
+
+  H: 256
+  W: 384
+  seed: [42, -1, -1, -1]
+  steps: 25
+  guidance_scale: 7.5
+
+  controlnet_image_indexs: [0]
+  controlnet_images:
+    - "__asset__/images/object/turtle-1.jpg"
+  controlnet_trajs: "__asset__/trajs/object/turtle-1.json"
+  control_mode: "object"
+
+
+  prompt:
+    - "a sea turtle gracefully swimming over a coral reef in the clear blue ocean."
+    - "a sea turtle gracefully swimming over a coral reef in the clear blue ocean."
+    - "a sea turtle gracefully swimming over a coral reef in the clear blue ocean."
+    - "a sea turtle gracefully swimming over a coral reef in the clear blue ocean."
+  
+  n_prompt:
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
