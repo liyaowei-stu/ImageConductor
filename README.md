@@ -18,16 +18,35 @@ This repository is the official implementation of [Image Conductor](https://arxi
 <sup>*</sup>Corresponding Author. <sup>†</sup>Project lead.
 
 
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-2406.05338-b31b1b.svg)](https://arxiv.org/abs/2406.05338) -->
+[![arXiv](https://img.shields.io/badge/arXiv-2406.05338-b31b1b.svg)](https://arxiv.org/pdf/2406.15339)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://liyaowei-stu.github.io/project/ImageConductor/)
 <!-- [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://liyaowei-stu.github.io/project/ImageConductor/) -->
 <!-- [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://liyaowei-stu.github.io/project/ImageConductor/) -->
 
 <!-- ![teaser](__assets__/teaser.gif) -->
 
+
+**📖 Table of Contents**
+
+
+- [Image Conductor](#image-conductor)
+  - [📍 Todo](#-todo)
+  - [🎨 Gallery](#-gallery)
+  - [🧙 Method Overview](#-method-overview)
+  - [🔧 Preparations](#-preparations)
+    - [Setup repository and conda environment](#setup-repository-and-conda-environment)
+    - [Prepare model weights](#prepare-model-weights)
+  - [💫 Inference](#-inference)
+    - [Run scripts](#run-scripts)
+    - [Run local gradio demo](#run-local-gradio-demo)
+  - [📣 Disclaimer](#-disclaimer)
+  - [💞 Acknowledgements](#-acknowledgements)
+
+
 ## 📍 Todo
-- [ ] Release Gradio demo
-- [ ] Release the ImageConductor code
+- [ ] Release ImageConductor v1 checkpoints
+- [x] Release Gradio demo
+- [x] Release the ImageConductor code
 - [x] Release paper
 
 ## 🎨 Gallery
@@ -42,19 +61,45 @@ To address the lack of large-scale annotated video data, we first design a data 
 
 ## 🔧 Preparations
 ### Setup repository and conda environment
-
+Adjust the PyTorch version according to the CUDA version you are using. CUDA 12.1 for our case.
 ```
 git clone https://github.com/liyaowei-stu/ImageConductor.git
 cd ImageConductor
 
-conda env create -f environment.yaml
+conda create -n imageconductor python=3.10 -y
 conda activate imageconductor
+pip install -r requirements.txt
+```
+### Prepare model weights
+- Download the weights of Stable-Diffusion v1.5 [SDv1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) and put it to `./models`.
+- Download the weights of ImageConductor [imageconductor_v1]() and put it to `./models`.
+- (optional) Manually download the community .safetensors models from [CivitAI](https://civitai.com), and save them to models/personalized.
+The model structure should be like:
+```
+|-- models
+    |-- stable-diffusion-v1-5
+        |-- model_index.json
+        |-- vae
+        |-- text_encoder
+        |-- ...
+    |-- unet.ckpt
+    |-- image_controlnet.ckpt
+    |-- flow_controlnet.ckpt
+    |-- personalized
+        |-- helloobjects_V12c.safetensors
+        |-- TUSUN.safetensors
+        |-- ...
 ```
 
 
-<!-- ## 🎈 Quick Start -->
 
-
+## 💫 Inference
+### Run scripts
+- Running scripts:
+        sh scripts/inference.sh
+### Run local gradio demo
+- Running scripts:
+        sh scripts/app.sh
 
 ## 📣 Disclaimer
 This is official code of Image Conductor.
