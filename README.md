@@ -96,9 +96,11 @@ The model structure should be like:
 ## 💫 Inference
 ### Run scripts
 - Running scripts:
+
         sh scripts/inference.sh
 ### Run local gradio demo
 - Running scripts:
+  
         sh scripts/app.sh
 
 ## 📣 Disclaimer
