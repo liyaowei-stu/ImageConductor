@@ -1,50 +1,17 @@
+
 - inference_config: "configs/inference/inference.yaml"
 
   unet_path: "models/unet.ckpt"
   image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet_obj_0024_2024-05-30_81k_camera_20k.ckpt"
 
   image_controlnet_config: "configs/inference/image_condition.yaml"
   flow_controlnet_config: "configs/inference/flow_condition.yaml"
 
   H: 256
   W: 384
-  seed: [42, -1, -1, -1]
-  steps: 25
-  guidance_scale: 7.5
-
-  controlnet_image_indexs: [0]
-  controlnet_images:
-    - "__asset__/images/camera/kogi-1.jpg"
-  controlnet_trajs: "__asset__/trajs/camera/kogi-1.json"
-  control_mode: "camera"
-
-
-  prompt:
-    - "A corgi dog."
-    - "A corgi dog."
-    - "A corgi dog."
-    - "A corgi dog."
-  
-  n_prompt:
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-
-
-- inference_config: "configs/inference/inference.yaml"
-
-  unet_path: "models/unet.ckpt"
-  image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
-
-  image_controlnet_config: "configs/inference/image_condition.yaml"
-  flow_controlnet_config: "configs/inference/flow_condition.yaml"
-
-  H: 256
-  W: 384
-  seed: [42, -1, -1, -1]
+  L: 16
+  seed: [42, 16867854766769816385, 7418633423439760965, 1413491334158301410]
   steps: 25
   guidance_scale: 7.5
 
@@ -70,54 +37,20 @@
 
 - inference_config: "configs/inference/inference.yaml"
 
-  unet_path: "models/unet.ckpt"
-  image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
-
-  image_controlnet_config: "configs/inference/image_condition.yaml"
-  flow_controlnet_config: "configs/inference/flow_condition.yaml"
-
-  H: 256
-  W: 384
-  seed: [42, -1, -1, -1]
-  steps: 25
-  guidance_scale: 7.5
-
-  controlnet_image_indexs: [0]
-  controlnet_images:
-    - "__asset__/images/camera/sunflower-1.jpg"
-  controlnet_trajs: "__asset__/trajs/camera/sunflower-1.json"
-  control_mode: "camera"
-
-
-  prompt:
-    - "a single sunflower."
-    - "a single sunflower."
-    - "a single sunflower."
-    - "a single sunflower."
-  
-  n_prompt:
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-
-
-- inference_config: "configs/inference/inference.yaml"
-
-  lora_model_path: "models/DreamBooth_LoRA/TUSUN.safetensors"
+  lora_model_path: "models/personalized/TUSUN.safetensors"
   lora_alpha: 0.6
 
   unet_path: "models/unet.ckpt"
   image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet_obj_0024_2024-05-30_81k_camera_20k.ckpt"
 
   image_controlnet_config: "configs/inference/image_condition.yaml"
   flow_controlnet_config: "configs/inference/flow_condition.yaml"
 
   H: 256
   W: 384
-  seed: [42, -1, -1, -1]
+  L: 16
+  seed: [15131888710792130110, 15764046508285903812, 15131888710792130110, 996953226890228361]
   steps: 25
   guidance_scale: 7.5
 
@@ -143,17 +76,18 @@
 
 - inference_config: "configs/inference/inference.yaml"
 
-  dreambooth_path: "models/DreamBooth_LoRA/helloobjects_V12c.safetensors"
+  dreambooth_path: "models/personalized/helloobjects_V12c.safetensors"
   unet_path: "models/unet.ckpt"
   image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet_obj_0024_2024-05-30_81k_camera_20k.ckpt"
 
   image_controlnet_config: "configs/inference/image_condition.yaml"
   flow_controlnet_config: "configs/inference/flow_condition.yaml"
 
   H: 256
   W: 384
-  seed: [42, -1, -1, -1]
+  L: 16
+  seed: [42, 609252853449662119, 14403297390660198455, 7970487946960948963]
   steps: 25
   guidance_scale: 7.5
 

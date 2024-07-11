@@ -13,15 +13,14 @@ This repository is the official implementation of [Image Conductor](https://arxi
 [Zhouxia Wang](https://scholar.google.com.hk/citations?hl=en&user=JWds_bQAAAAJ),
 [Ziyang Yuan](https://scholar.google.com.hk/citations?hl=en&user=fWxWEzsAAAAJ),
 [Liangbin Xie](https://scholar.google.com.hk/citations?user=auQhf5EAAAAJ&hl=en&oi=ao),
-[Yuexian Zou<sup>*</sup>](https://scholar.google.com.hk/citations?user=sfyr7zMAAAAJ&hl=en&oi=ao),
 [Ying Shan](https://scholar.google.com.hk/citations?user=4oXBp9UAAAAJ&hl=en&oi=ao),
+[Yuexian Zou<sup>*</sup>](https://scholar.google.com.hk/citations?user=sfyr7zMAAAAJ&hl=en&oi=ao),
 <sup>*</sup>Corresponding Author. <sup>†</sup>Project lead.
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2406.05338-b31b1b.svg)](https://arxiv.org/pdf/2406.15339)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://liyaowei-stu.github.io/project/ImageConductor/)
-<!-- [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://liyaowei-stu.github.io/project/ImageConductor/) -->
-<!-- [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://liyaowei-stu.github.io/project/ImageConductor/) -->
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://huggingface.co/spaces/TencentARC/ImageConductor) (Debugging, you can run it locally)
 
 <!-- ![teaser](__assets__/teaser.gif) -->
 
@@ -44,7 +43,7 @@ This repository is the official implementation of [Image Conductor](https://arxi
 
 
 ## 📍 Todo
-- [ ] Release ImageConductor v1 checkpoints
+- [x] Release ImageConductor v1 checkpoints
 - [x] Release Gradio demo
 - [x] Release the ImageConductor code
 - [x] Release paper
@@ -72,7 +71,7 @@ pip install -r requirements.txt
 ```
 ### Prepare model weights
 - Download the weights of Stable-Diffusion v1.5 [SDv1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) and put it to `./models`.
-- Download the weights of ImageConductor [imageconductor_v1]() and put it to `./models`.
+- Download the weights of ImageConductor [imageconductor_v1](https://huggingface.co/TencentARC/ImageConductor) and put it to `./models`.
 - (optional) Manually download the community .safetensors models from [CivitAI](https://civitai.com), and save them to models/personalized.
 The model structure should be like:
 ```

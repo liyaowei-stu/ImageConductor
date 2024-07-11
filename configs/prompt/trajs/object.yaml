@@ -2,14 +2,15 @@
 
   unet_path: "models/unet.ckpt"
   image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet_obj_0024_2024-05-30_81k_camera_20k.ckpt"
 
   image_controlnet_config: "configs/inference/image_condition.yaml"
   flow_controlnet_config: "configs/inference/flow_condition.yaml"
 
   H: 256
   W: 384
-  seed: [42, -1, -1, -1]
+  L: 16
+  seed: [10294865041322163136, 6854275249656120509, 14633516025869650881, 10173593970214263222]
   steps: 25
   guidance_scale: 7.5
 
@@ -33,123 +34,20 @@
     - "worst quality, low quality, letterboxed"
 
 
+
 - inference_config: "configs/inference/inference.yaml"
 
   unet_path: "models/unet.ckpt"
   image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet_obj_0024_2024-05-30_81k_camera_20k.ckpt"
 
   image_controlnet_config: "configs/inference/image_condition.yaml"
   flow_controlnet_config: "configs/inference/flow_condition.yaml"
 
   H: 256
   W: 384
-  seed: [42, -1, -1, -1]
-  steps: 25
-  guidance_scale: 7.5
-
-  controlnet_image_indexs: [0]
-  controlnet_images:
-    - "__asset__/images/object/kiss-1.jpg"
-  controlnet_trajs: "__asset__/trajs/object/kiss-1.json"
-  control_mode: "object"
-
-
-  prompt:
-    - "A couple embraces and kiss in the rain."
-    - "A couple embraces and kiss in the rain."
-    - "A couple embraces and kiss in the rain."
-    - "A couple embraces and kiss in the rain."
-  
-  n_prompt:
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-
-
-- inference_config: "configs/inference/inference.yaml"
-
-  unet_path: "models/unet.ckpt"
-  image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
-
-  image_controlnet_config: "configs/inference/image_condition.yaml"
-  flow_controlnet_config: "configs/inference/flow_condition.yaml"
-
-  H: 256
-  W: 384
-  seed: [42, -1, -1, -1]
-  steps: 25
-  guidance_scale: 7.5
-
-  controlnet_image_indexs: [0]
-  controlnet_images:
-    - "__asset__/images/object/bee-1.jpg"
-  controlnet_trajs: "__asset__/trajs/object/bee-1.json"
-  control_mode: "object"
-
-
-  prompt:
-    - "A honeybee flies to the pistil of sunflower."
-    - "A honeybee flies to the pistil of sunflower."
-    - "A honeybee flies to the pistil of sunflower."
-    - "A honeybee flies to the pistil of sunflower."
-  
-  n_prompt:
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-
-
-- inference_config: "configs/inference/inference.yaml"
-
-  unet_path: "models/unet.ckpt"
-  image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
-
-  image_controlnet_config: "configs/inference/image_condition.yaml"
-  flow_controlnet_config: "configs/inference/flow_condition.yaml"
-
-  H: 256
-  W: 384
-  seed: [42, -1, -1, -1]
-  steps: 25
-  guidance_scale: 7.5
-
-  controlnet_image_indexs: [0]
-  controlnet_images:
-    - "__asset__/images/object/red-car-1.jpg"
-  controlnet_trajs: "__asset__/trajs/object/red-car-1.json"
-  control_mode: "object"
-
-
-  prompt:
-    - "Two red sports cars facing each other on a road."
-    - "Two red sports cars facing each other on a road."
-    - "Two red sports cars facing each other on a road."
-    - "Two red sports cars facing each other on a road."
-  
-  n_prompt:
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-    - "worst quality, low quality, letterboxed"
-
-
-- inference_config: "configs/inference/inference.yaml"
-
-  unet_path: "models/unet.ckpt"
-  image_controlnet_path: "models/image_controlnet.ckpt"
-  flow_controlnet_path: "models/flow_controlnet.ckpt"
-
-  image_controlnet_config: "configs/inference/image_condition.yaml"
-  flow_controlnet_config: "configs/inference/flow_condition.yaml"
-
-  H: 256
-  W: 384
-  seed: [42, -1, -1, -1]
+  L: 16
+  seed: [42, 11318446767408804497, 8587812819942057568, 2217700264573930663]
   steps: 25
   guidance_scale: 7.5
 
@@ -165,6 +63,43 @@
     - "a sea turtle gracefully swimming over a coral reef in the clear blue ocean."
     - "a sea turtle gracefully swimming over a coral reef in the clear blue ocean."
     - "a sea turtle gracefully swimming over a coral reef in the clear blue ocean."
+  
+  n_prompt:
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+    - "worst quality, low quality, letterboxed"
+
+
+
+- inference_config: "configs/inference/inference.yaml"
+
+  unet_path: "models/unet.ckpt"
+  image_controlnet_path: "models/image_controlnet.ckpt"
+  flow_controlnet_path: "models/flow_controlnet_obj_0024_2024-05-30_81k_camera_20k.ckpt"
+
+  image_controlnet_config: "configs/inference/image_condition.yaml"
+  flow_controlnet_config: "configs/inference/flow_condition.yaml"
+
+  H: 256
+  W: 384
+  L: 16
+  seed: [9212796867463171361, 10294865041322163136, 16573899552779565008, 6532250211602739304]
+  steps: 25
+  guidance_scale: 7.5
+
+  controlnet_image_indexs: [0]
+  controlnet_images:
+    - "__asset__/images/object/kiss-1.jpg"
+  controlnet_trajs: "__asset__/trajs/object/kiss-1.json"
+  control_mode: "object"
+
+
+  prompt:
+    - "A couple embraces and kiss in the rain."
+    - "A couple embraces and kiss in the rain."
+    - "A couple embraces and kiss in the rain."
+    - "A couple embraces and kiss in the rain."
   
   n_prompt:
     - "worst quality, low quality, letterboxed"
