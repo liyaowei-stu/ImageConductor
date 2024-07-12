@@ -38,6 +38,8 @@ This repository is the official implementation of [Image Conductor](https://arxi
   - [💫 Inference](#-inference)
     - [Run scripts](#run-scripts)
     - [Run local gradio demo](#run-local-gradio-demo)
+    - [Camera Change](#camera-change)
+    - [Object Movements](#object-movements)
   - [📣 Disclaimer](#-disclaimer)
   - [💞 Acknowledgements](#-acknowledgements)
 
@@ -101,6 +103,25 @@ The model structure should be like:
 - Running scripts:
   
         sh scripts/app.sh
+
+
+### Camera Change
+<table class="center">
+<tr>
+  <td><video src="__assets__/lush.mp4" autoplay></td>
+  <td><video src="__assets__/tusun.mp4" autoplay></td>
+  <td><video src="__assets__/painting.mp4" autoplay></td>
+</tr>
+</table>
+
+### Object Movements
+<table class="center">
+<tr>
+  <td><video src="__assets__/rose.mp4" autoplay></td>
+  <td><video src="__assets__/turtle.mp4" autoplay></td>
+  <td><video src="__assets__/jellyfish.mp4" autoplay></td>
+</tr>
+</table>
 
 ## 📣 Disclaimer
 This is official code of Image Conductor.
