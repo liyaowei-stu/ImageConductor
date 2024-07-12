@@ -596,7 +596,7 @@ if __name__=="__main__":
                             )
                             
                     with gr.Group():
-                        personalized = gr.Dropdown(label="Personalized", choices=["", 'HelloObject', 'TUSUN'], value="")
+                        personalized = gr.Dropdown(label="Personalized", choices=['', 'HelloObject', 'TUSUN'], value='')
                         examples_type = gr.Textbox(label="Examples Type (Ignore) ",  value="", visible=False)
 
             with gr.Column(scale=7):
