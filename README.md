@@ -108,18 +108,18 @@ The model structure should be like:
 ### Camera Change
 <table class="center">
 <tr>
-  <td><video src="./__assets__/lush.mp4" autoplay></td>
-  <td><video src="./__assets__/tusun.mp4" autoplay></td>
-  <td><video src="./__assets__/painting.mp4" autoplay></td>
+  <td><video src="https://github.com/user-attachments/assets/de7065d4-8b4e-48c1-8ab7-b0cbb9d71ff5" autoplay></td>
+  <td><video src="https://github.com/user-attachments/assets/b63954f0-fb43-4b2a-a413-0e25fbf8c28e" autoplay></td>
+  <td><video src="https://github.com/user-attachments/assets/b8c03892-0cd4-421a-b951-3ecb30b9bb5f" autoplay></td>
 </tr>
 </table>
 
 ### Object Movements
 <table class="center">
 <tr>
-  <td><video src="./__assets__/rose.mp4" autoplay></td>
-  <td><video src="./__assets__/turtle.mp4" autoplay></td>
-  <td><video src="https://github.com/liyaowei-stu/ImageConductor/blob/main/__assets__/jellyfish.mp4" autoplay></td>
+  <td><video src="https://github.com/user-attachments/assets/38a4b6c4-852a-459f-a90e-1184c6b1948b" autoplay></td>
+  <td><video src="https://github.com/user-attachments/assets/10076616-c35c-48a1-8397-de6836b76153" autoplay></td>
+  <td><video src="https://github.com/user-attachments/assets/2b0cbfdd-a5e4-4933-b7ce-8c8defffca1e" autoplay></td>
 </tr>
 </table>
 
