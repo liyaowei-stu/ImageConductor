@@ -108,18 +108,18 @@ The model structure should be like:
 ### Camera Change
 <table class="center">
 <tr>
-  <td><video src="__assets__/lush.mp4" autoplay></td>
-  <td><video src="__assets__/tusun.mp4" autoplay></td>
-  <td><video src="__assets__/painting.mp4" autoplay></td>
+  <td><video src="./__assets__/lush.mp4" autoplay></td>
+  <td><video src="./__assets__/tusun.mp4" autoplay></td>
+  <td><video src="./__assets__/painting.mp4" autoplay></td>
 </tr>
 </table>
 
 ### Object Movements
 <table class="center">
 <tr>
-  <td><video src="__assets__/rose.mp4" autoplay></td>
-  <td><video src="__assets__/turtle.mp4" autoplay></td>
-  <td><video src="__assets__/jellyfish.mp4" autoplay></td>
+  <td><video src="./__assets__/rose.mp4" autoplay></td>
+  <td><video src="./__assets__/turtle.mp4" autoplay></td>
+  <td><video src="./__assets__/jellyfish.mp4" autoplay></td>
 </tr>
 </table>
 
