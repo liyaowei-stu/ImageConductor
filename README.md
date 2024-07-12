@@ -119,7 +119,7 @@ The model structure should be like:
 <tr>
   <td><video src="./__assets__/rose.mp4" autoplay></td>
   <td><video src="./__assets__/turtle.mp4" autoplay></td>
-  <td><video src="./__assets__/jellyfish.mp4" autoplay></td>
+  <td><video src="https://github.com/liyaowei-stu/ImageConductor/blob/main/__assets__/jellyfish.mp4" autoplay></td>
 </tr>
 </table>
 
