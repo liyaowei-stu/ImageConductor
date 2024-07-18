@@ -20,7 +20,7 @@ This repository is the official implementation of [Image Conductor](https://arxi
 
 [![arXiv](https://img.shields.io/badge/arXiv-2406.05338-b31b1b.svg)](https://arxiv.org/pdf/2406.15339)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://liyaowei-stu.github.io/project/ImageConductor/)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://huggingface.co/spaces/TencentARC/ImageConductor) (Debugging, you can run it locally)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://huggingface.co/spaces/TencentARC/ImageConductor) 
 
 <!-- ![teaser](__assets__/teaser.gif) -->
 
@@ -45,8 +45,9 @@ This repository is the official implementation of [Image Conductor](https://arxi
 
 
 ## 📍 Todo
+- [x] Release online Gradio demo
 - [x] Release ImageConductor v1 checkpoints
-- [x] Release Gradio demo
+- [x] Release local Gradio demo
 - [x] Release the ImageConductor code
 - [x] Release paper
 
@@ -131,3 +132,5 @@ Feel free to contact us if you would like remove them.
 ## 💞 Acknowledgements
 The code is built upon the below repositories, we thank all the contributors for open-sourcing.
 * [AnimateDiff](https://github.com/guoyww/AnimateDiff)
+
+We sincerely appreciate HF's [hysts](https://huggingface.co/hysts) for helping us fix the bugs in our online demo.
